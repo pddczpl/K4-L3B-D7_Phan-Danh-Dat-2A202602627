@@ -172,7 +172,7 @@ Trước khi nộp bản nhóm cuối cùng cần thay tên tạm/MSSV của hai
 - [Chi tiết dễ đọc](SHOPEE_BENCHMARK_DETAILS.md): đầy đủ 15 lượt hỏi/đáp của ba cấu hình với nội dung chunk.
 - [Bản xuất văn bản cá nhân](ket_qua_benchmark.txt): 5 lượt hỏi/đáp theo chiến lược Heading của Đạt.
 - [Đánh giá câu trả lời](shopee_answer_review.json), [ghi chú nguồn](../docs/SHOPEE_DATA_NOTES.md), [manifest nguồn](../data/shopee-orders/sources.csv) và [5 câu hỏi chuẩn](../data/shopee-orders/benchmark_queries.json).
-- [Báo cáo cá nhân của Đạt](REPORT_CANHAN.md) và [log kiểm thử Shopee](pytest_shopee.txt).
+- [Báo cáo cá nhân](REPORT_CANHAN.md) và [log kiểm thử Shopee](pytest_shopee.txt).
 
 Từ thư mục gốc, với môi trường đã cài `google-genai` và khóa cấu hình riêng trong `.env`:
 
