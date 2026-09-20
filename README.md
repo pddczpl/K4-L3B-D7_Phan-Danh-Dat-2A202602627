@@ -1,5 +1,30 @@
 # K4-L3B — Ngày 7: Nền Tảng Dữ Liệu, Embedding & Vector Store
 
+## Bài làm G23 — Đơn hàng Shopee
+
+**Phan Danh Đạt — 2A202602627.** Hai thành viên còn lại dùng tên tạm Nguyễn Văn A và Nguyễn Văn B.
+
+- Đề tài: quy định và hướng dẫn xử lý đơn hàng Shopee cho người mua/người bán.
+- Corpus: 7 bản tóm lược có nguồn tại [`data/shopee-orders/`](data/shopee-orders/), kiểm kê trong [`sources.csv`](data/shopee-orders/sources.csv); xem [cách thu thập và giới hạn](docs/SHOPEE_DATA_NOTES.md).
+- Bộ chung: [5 câu hỏi và đáp án tham chiếu](data/shopee-orders/benchmark_queries.json).
+- Chiến lược cá nhân của Đạt: `HeadingChunker(500)`; so sánh cùng máy với FixedSize và Recursive.
+- Bàn giao: [báo cáo cá nhân](report/REPORT_CANHAN.md), [báo cáo nhóm](report/REPORT_NHOM.md).
+
+Chạy từ thư mục dự án bằng PowerShell:
+
+```powershell
+.\venv\Scripts\python.exe -m pytest tests/ -v
+# Kiểm tra luồng không dùng API:
+.\venv\Scripts\python.exe -m scripts.run_shopee_benchmark --provider mock
+# Benchmark embedding + trả lời bằng Gemini thật (đọc khóa từ .env):
+.\venv\Scripts\python.exe -m pip install -r requirements-gemini.txt
+.\venv\Scripts\python.exe -m scripts.run_shopee_benchmark --provider gemini --llm gemini
+```
+
+Kết quả đầy đủ được ghi vào `report/shopee_benchmark_gemini_gemini.json`. Cache cục bộ trong `.cache/` và khóa trong `.env` được Git bỏ qua. `main.py` bên dưới vẫn là demo nhập môn của starter; lệnh `scripts.run_shopee_benchmark` là demo theo đề tài Shopee.
+
+---
+
 > Bản K4-L3B của Lab 07 (chủ đề: chính sách thương mại điện tử). Hướng dẫn Codelabs để tải lên nằm tại `../codelabs/day7-lab-data-foundations.md`; yêu cầu Giai đoạn 2 riêng xem [K4_VARIANT.md](K4_VARIANT.md). Lớp song song L3A dùng cùng bài học nhưng crawl chủ đề dịch vụ/quy định đại học.
 
 ---

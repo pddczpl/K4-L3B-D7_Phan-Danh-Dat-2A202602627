@@ -1,0 +1,130 @@
+{
+  "source_result": "shopee_benchmark_gemini_gemini.json",
+  "source_recorded_at": "2026-09-20T03:25:48.259003+00:00",
+  "reviewed_on": "2026-09-20",
+  "reviewed_by": "assistant",
+  "method": "Đọc đối chiếu câu trả lời thực với gold answer và nội dung truy xuất. Điểm tham khảo theo rubric của lab, không phải điểm giảng viên.",
+  "grading_rule": "2 khi top-1 đủ bằng chứng và câu trả lời đúng; 1 khi có bằng chứng trong top-3 nhưng rank thấp hơn 1 hoặc câu trả lời còn thiếu/sai một chi tiết; 0 khi không có bằng chứng trong top-3.",
+  "reviews": [
+    {
+      "strategy": "heading",
+      "query_id": "Q1",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "heading",
+      "query_id": "Q2",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "heading",
+      "query_id": "Q3",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "heading",
+      "query_id": "Q4",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "heading",
+      "query_id": "Q5",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "fixed_size",
+      "query_id": "Q1",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "fixed_size",
+      "query_id": "Q2",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 2,
+      "reference_points": 1,
+      "reason": "Câu trả lời đủ điều kiện chấp nhận/từ chối và trích đúng [2], nhưng top-1 là chunk về ngoại lệ SPX; bằng chứng đầy đủ ở rank 2."
+    },
+    {
+      "strategy": "fixed_size",
+      "query_id": "Q3",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "fixed_size",
+      "query_id": "Q4",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "fixed_size",
+      "query_id": "Q5",
+      "answer_assessment": "partial",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 1,
+      "reason": "Câu mở đầu gọi Kênh Người Bán, trong khi thân bài và nguồn nói Kênh Quản Lý Shop; tên giao diện không nhất quán."
+    },
+    {
+      "strategy": "recursive",
+      "query_id": "Q1",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "recursive",
+      "query_id": "Q2",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "recursive",
+      "query_id": "Q3",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "recursive",
+      "query_id": "Q4",
+      "answer_assessment": "correct",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 2,
+      "reason": "Câu trả lời khớp các ý chính của gold answer và có dẫn số nguồn tương ứng."
+    },
+    {
+      "strategy": "recursive",
+      "query_id": "Q5",
+      "answer_assessment": "partial",
+      "first_answer_bearing_rank": 1,
+      "reference_points": 1,
+      "reason": "Thay Kênh Quản Lý Shop bằng Kênh Người Bán nhiều lần; nguồn không cho phép đồng nhất hai giao diện. Các nhánh đồng ý/từ chối đúng."
+    }
+  ]
+}

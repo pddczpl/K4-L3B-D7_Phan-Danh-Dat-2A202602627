@@ -1,0 +1,110 @@
+{
+  "student": {
+    "name": "Phan Danh Đạt",
+    "student_id": "2A202602627",
+    "group_size": 3
+  },
+  "group": "G23",
+  "topic": "Đơn hàng Shopee",
+  "recorded_at": "2026-09-20T03:21:19.178564+00:00",
+  "provider": "mock",
+  "backend": "mock embeddings fallback",
+  "task_type": "mock (no semantic meaning)",
+  "embedding_dimensions": 64,
+  "warm_up": {
+    "length": 10000,
+    "chunk_size": 500,
+    "overlap_50_count": 23,
+    "overlap_100_count": 25
+  },
+  "comparison_settings": {
+    "chunk_size": 200,
+    "fixed_overlap": 20,
+    "sentences_per_chunk": 3
+  },
+  "chunking_comparison": {
+    "data/shopee-orders/buyer-cancel-order.md": {
+      "fixed_size": {
+        "count": 4,
+        "avg_length": 198.0
+      },
+      "by_sentences": {
+        "count": 3,
+        "avg_length": 242.66666666666666
+      },
+      "recursive": {
+        "count": 8,
+        "avg_length": 91.5
+      }
+    },
+    "data/shopee-orders/buyer-cancelled-order.md": {
+      "fixed_size": {
+        "count": 4,
+        "avg_length": 163.25
+      },
+      "by_sentences": {
+        "count": 3,
+        "avg_length": 196.66666666666666
+      },
+      "recursive": {
+        "count": 6,
+        "avg_length": 98.83333333333333
+      }
+    },
+    "data/shopee-orders/buyer-order-status.md": {
+      "fixed_size": {
+        "count": 4,
+        "avg_length": 159.5
+      },
+      "by_sentences": {
+        "count": 2,
+        "avg_length": 288.0
+      },
+      "recursive": {
+        "count": 7,
+        "avg_length": 82.57142857142857
+      }
+    }
+  },
+  "predicted_highest_pair": 2,
+  "predicted_lowest_pair": 4,
+  "actual_highest_pair": 4,
+  "actual_lowest_pair": 5,
+  "pairs": [
+    {
+      "id": 1,
+      "a": "Tôi muốn biết kiện hàng của mình đang ở đâu.",
+      "b": "Làm thế nào để theo dõi quá trình vận chuyển đơn tôi đã mua?",
+      "prediction": "Cao; cùng nhu cầu theo dõi hành trình kiện hàng.",
+      "cosine_similarity": -0.16262747087750387
+    },
+    {
+      "id": 2,
+      "a": "Đơn hàng đã hủy không thể được giao lại.",
+      "b": "Không thể khôi phục đơn hàng đã hủy để tiếp tục giao.",
+      "prediction": "Cao nhất; hai cách diễn đạt cùng ý về đơn đã hủy.",
+      "cosine_similarity": -0.1557160084154557
+    },
+    {
+      "id": 3,
+      "a": "Tôi cần hủy đơn hàng trước khi giao.",
+      "b": "Tôi muốn xem hạn thanh toán của đơn hàng.",
+      "prediction": "Trung bình; cùng đơn hàng nhưng khác nhu cầu xử lý.",
+      "cosine_similarity": -0.07020810949350095
+    },
+    {
+      "id": 4,
+      "a": "Tôi kiểm tra trạng thái đơn hàng trong ứng dụng Shopee.",
+      "b": "Đội bóng ghi bàn ở cuối trận đấu.",
+      "prediction": "Thấp nhất; khác chủ đề và ý nghĩa.",
+      "cosine_similarity": 0.19177696398631516
+    },
+    {
+      "id": 5,
+      "a": "Người mua có thể hủy đơn hàng.",
+      "b": "Người mua không thể hủy đơn hàng.",
+      "prediction": "Cao về chủ đề dù từ phủ định đảo ngược kết luận.",
+      "cosine_similarity": -0.2512298025901139
+    }
+  ]
+}
